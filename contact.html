@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmutoğlu İnşaat - İletişim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/png" href="images/images.png"/>
+</head>
+<body>
+<section class="subc-header">
+
+        <nav>
+            <a href="index.html"><img src="images/images.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="proje.html">PROJELER</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>      
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>    
+        </nav>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <h1>İletişim</h1>
+
+</section>
+
+<!---------------------İletişim----------------------->
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50961.779517273564!2d35.785526479520954!3d37.030994404676825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1528c956c922f25d%3A0x716aaba3c519823e!2sCeyhan%2C%20Adana!5e0!3m2!1str!2str!4v1658407476552!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Adana, Ceyhan</h5>
+                   <!--- <p>Adana, Ceyhan</p>   TAM ADRES GİRİLECEK   -->
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+90 541 796 0644</h5>
+                    <p>Hafta İçi : 09.00-21.00</p>
+                    <p>Hafta Sonu : 12.00-21.00</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@mahmutogluinsaat.com</h5>
+                    <p>bize e-mail ile ulaşın</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+             
+            <form action="form-handler.php" method="POST">
+                <input type="text" name="name" placeholder="Adınızı giriniz..." required>
+                <input type="email" name="email" placeholder="Email adresinizi giriniz..." required>
+                <input type="text" name="subject" placeholder="Konuyu giriniz..." required>
+                <textarea rows="8" name="message" placeholder="Mesajınız...." required></textarea>
+                <button type="submit" class="hero-btn red-btn">Mesajınızı Gönderin</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!------------------- FOOTER ------------------------------------>
+<section class="footer">
+    
+    <div class="icons">
+        <style>
+            a {
+             text-decoration: none;
+            }
+          </style>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/mahmutoglu_insaat_hmy" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/h-mehmet-yildirim-5383277a/" class="fa fa-linkedin"></a>    
+        <a href="#" class="fa fa-twitter"></a>     
+    </div><br>
+    <p>© 2022 Mahmutoğlu İnşaat Tüm Hakları Saklıdır.</p>
+    <p>Made By<a href="https://www.instagram.com/frontemel" class="fa fa-instagram"></a></p>
+</section>
+
+<!------JavaScript for Toggle Menu--------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+    
+</body>
+</html>

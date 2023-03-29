@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmutoğlu İnşaat - Anasayfa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/png" href="images/images.png"/>
+</head>
+<body>
+<section class="header">
+
+        <nav>
+            <a href="index.html"><img src="images/images.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+               
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="proje.html">PROJELER</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>      
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            
+        </nav>
+<div class="text-box">
+    <h1>Geleceği Güvenle İnşa Ediyoruz</h1>
+    <p>Projelerimiz için ziyaret edin</p>
+    <a href="proje.html" class="hero-btn">Ziyaret Et</a>
+
+</div>
+
+
+</section>
+
+<!-------------- Courses ------------>
+<section class="proje">
+    <h1>Ofisler İnşa Ediyor, Yeniliyoruz</h1>
+    <!---p boşlukları vardı-------->
+
+    <div class="row">
+        <div class="proje-col">
+            <img src="images/ofisler.png">
+            <h3>Ofisler</h3>
+            
+        </div>
+        <div class="proje-col">
+            <img src="images/altyapi-ve-hafriyat.png">
+            <h3>Hafriyat & Altyapı</h3>
+            
+        </div>
+        <div class="proje-col">
+            <img src="images/projeler.png">
+            <h3>Projeler</h3>
+            
+        </div>
+    </div>
+
+</section>
+
+
+
+<!------------------ BİZİ ARAYIN --------------------------------->
+
+<section class="cta">
+    <h1>Her Zaman Her Yerden<br> Bize Ulaşabilirsiniz</h1>
+    <a href="contact.html" class="hero-btn">İLETİŞİM</a>
+
+</section>
+
+
+<!------------------- FOOTER ------------------------------------>
+<section class="footer">
+    <!-----------hakkımızda ve p başlıklarını sildim-->
+    
+    <div class="icons">
+        <style>
+            a {
+             text-decoration: none;
+            }
+          </style>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/mahmutoglu_insaat_hmy" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/h-mehmet-yildirim-5383277a/" class="fa fa-linkedin"></a>    
+        <a href="#" class="fa fa-twitter"></a>  
+    </div><br>
+    <p>© 2022 Mahmutoğlu İnşaat Tüm Hakları Saklıdır.</p>
+    <p>Made By<a href="https://www.instagram.com/frontemel" class="fa fa-instagram"></a></p>
+</section>
+
+<!------JavaScript for Toggle Menu--------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+    
+</body>
+</html>
